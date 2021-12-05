@@ -660,8 +660,13 @@ textarea{
     align-items: baseline;
     
 }
+/* .container .footer{
+    display: flex;
+    align-items: baseline;
+    
+} */
 .footer-icon{
-    margin-right: 93px;
+    margin-right: auto;
 }
 .footer-icon-tittle{
     margin-bottom: 20px;
@@ -752,6 +757,7 @@ textarea{
     background: 0%;
     outline: none;
     transition: border var(--animation);
+    padding-left: 16px;
 }
 .footer-form-email::placeholder{
     font-family: Roboto;
@@ -760,7 +766,6 @@ textarea{
     letter-spacing: 0.03em;
 
     color: var(--footer-form-email-color);
-    padding-left: 16px;
     
 }
 .footer-form-email:focus,
@@ -779,16 +784,17 @@ textarea{
     line-height: 1.8;
     letter-spacing: 0.06em;
     border-radius: 4px;
+    border: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
     padding: 0;
-    transition: border var(--animation), background var(--animation)
+    transition: background var(--animation)
 }
 .footer-form-btn:hover,
 .footer-form-btn:focus{
-    border: 1px solid var(--accent-color);
+    /* border: 1px solid var(--accent-color); */
     background: var(--footer-form-btn-hover);
 
 }
@@ -820,6 +826,7 @@ textarea{
     left: 50%;
     border-radius: 4px;
     transform: translate(-50%, -50%);
+    padding: 40px;
 }
 .close-icon{
     transition: fill var(--animation);
@@ -861,11 +868,11 @@ textarea{
 
 /* ------------ФОРМА------------- */
 
-.form{
+/* .form{
     padding: 40px;
-}
+} */
 .form-field{
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     margin-bottom: 10px;
     
@@ -939,7 +946,10 @@ textarea{
 
     color: rgba(117, 117, 117, 0.5);
 }
-
+/* .modal-check:focus,
+.modal-check:hover{
+    border-color: var(--accent-color);
+} */
 .modal-check-text{
     font-family: Roboto;
     font-size: 14px;  
@@ -962,6 +972,7 @@ textarea{
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
+    transition: border-color var(--animation);
 }
 .check-icon{
     fill: var(--primary-white-color);
@@ -970,6 +981,10 @@ textarea{
     background-color: var(--accent-color);
     border: none;
 } 
+.modal-check-text span:hover,
+.modal-check-text span:focus{
+    border-color: var(--accent-color);
+}
 
 
 /* .modal-check-text::before{
