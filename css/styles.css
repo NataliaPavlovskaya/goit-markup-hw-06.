@@ -655,11 +655,17 @@ textarea{
 .footer-thumb{
     margin-right: 60px;
 }
-.footer-left-container{
+.footer>.container{
+    display: flex;
+    align-items: baseline;
+}
+        
+     
+/* .footer-left-container{
     display: flex;
     align-items: baseline;
     
-}
+} */
 /* .container .footer{
     display: flex;
     align-items: baseline;
